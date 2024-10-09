@@ -1,0 +1,165 @@
+.app-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+h2, h3, h4 {
+  color: #555;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  background-color: #007BFF;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-button.active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.user-form {
+  margin-bottom: 20px;
+}
+
+.user-form input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.user-form button {
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-item {
+  margin-bottom: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-name {
+  cursor: pointer;
+  color: #007BFF;
+}
+
+.delete-user {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.movie-list {
+  margin-top: 10px;
+}
+
+.movie-item {
+  margin-bottom: 10px;
+}
+
+.movie-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s;
+}
+
+.movie-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card h4 {
+  margin: 5px 0;
+}
+
+.movie-card p {
+  margin: 2px 0;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+}
+
+.suggestion-item {
+  padding: 5px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.suggestion-item:hover {
+  background-color: #e0e0e0;
+}
+
+.recommended-movies {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.recommendation-item {
+  margin: 10px;
+  width: 150px; /* Set a fixed width for each card */
+}
+
+.movie-poster {
+  width: 100%; /* Make the poster fit the card */
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.movie-card h5 {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.movie-card p {
+  margin: 2px 0;
+  font-size: 0.9em;
+  color: #666;
+}
