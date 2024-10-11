@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 // User and Movie Models
 const userSchema = new mongoose.Schema({
     username: { type: String, required: true, unique: true },
-    movies: [{ title: String, year: Number }]
+    movies: [{ title: String, genre: String, rating: String }]
 });
 
 const User = mongoose.model('User', userSchema);
@@ -38,10 +38,10 @@ app.post('/api/users', async (req, res) => {
 
 app.post('/api/users/:userId/movies', async (req, res) => {
     const { userId } = req.params;
-    const { title, year } = req.body;
+    const { title, genre, rating } = req.body;
     try {
         const user = await User.findById(userId);
-        user.movies.push({ title, year });
+        user.movies.push({ title, genre, rating});
         await user.save();
         res.status(200).json(user);
     } catch (error) {

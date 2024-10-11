@@ -129,7 +129,9 @@ function App() {
                                         <li key={index} className="movie-item">
                                             <div className="movie-card">
                                                 <h4>{movie.title}</h4>
-                                                <p>{movie.genre}</p>
+
+
+                                                <p>Genre: {movie.genre}</p>
                                                 <p>Rating: {movie.rating}</p>
                                                 <button onClick={() => deleteMovie(index)} className="delete-movie">Delete</button>
                                             </div>
